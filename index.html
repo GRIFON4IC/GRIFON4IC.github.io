@@ -1,1 +1,30 @@
-<b>Hello World<b/>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DoS Attack Tool</title>
+</head>
+<body>
+  <h1>DoS Attack Tool</h1>
+  <form action="api/api2.php" method="get">
+    <label for="host">Host:</label>
+    <input type="text" id="host" name="host" placeholder="76.76.76.6">
+    <br>
+    <label for="port">Port:</label>
+    <input type="number" id="port" name="port" placeholder="80">
+    <br>
+    <label for="time">Time (seconds):</label>
+    <input type="number" id="time" name="time" placeholder="100">
+    <br>
+    <label for="method">Method:</label>
+    <select id="method" name="method">
+      <option value="dns">DNS</option>
+      <option value="chargen">Chargen</option>
+      <option value="ntp">NTP</option>
+      <option value="ack">ACK</option>
+      <option value="syn">SYN</option>
+    </select>
+    <br>
+    <input type="submit" value="Start Attack">
+  </form>
+</body>
+</html>
